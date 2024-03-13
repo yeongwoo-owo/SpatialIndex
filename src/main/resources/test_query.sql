@@ -6,6 +6,6 @@ SELECT place_id,
        longitude,
        ST_DISTANCE_SPHERE(@user_position, point(longitude, latitude)) as distance
 FROM place
-WHERE company_name like CONCAT(@name, '%')
+WHERE match(company_name) against(@name)
 ORDER BY distance
 LIMIT 10;
