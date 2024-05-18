@@ -115,7 +115,7 @@ ORDER BY distance
 LIMIT 10;
 ```
 
-FullText를 도입한 결과 인덱스 타입이 RANGE로 변경되는 것을 확인할 수 있다.
+FullText를 도입한 결과 인덱스 타입이 FULLTEXT로 변경되는 것을 확인할 수 있다.
 
 | 시도  | 실행 시간(ms) |
 |-----|-----------|
